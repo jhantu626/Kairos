@@ -1,14 +1,29 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import {
+  Button,
+  Image,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
+import React from 'react';
+import {TextInput} from 'react-native-gesture-handler';
 
 const Login = () => {
   return (
-    <View>
-      <Text>Login</Text>
+    <View style={styles.container}>
+      <Image source={require('./../../assets/images/signin_avatar.png')} style={styles.imageView} />
     </View>
-  )
-}
+  );
+};
 
-export default Login
+const styles = StyleSheet.create({
+  container:{
+    backgroundColor: 'black'
+  },
+  imageView:{
+ 
+  }
+});
 
-const styles = StyleSheet.create({})
+export default Login;
