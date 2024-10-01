@@ -60,7 +60,7 @@ const OnboardingScreen = () => {
       ]}
       titleStyles={styles.title}
       subTitleStyles={styles.subTitle}
-      onDone={() => navigation.replace('Login')}
+      onDone={() => navigation.replace('Signup')}
       onSkip={() => navigation.replace('Login')}
     />
   );
